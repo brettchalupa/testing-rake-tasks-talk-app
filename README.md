@@ -1,6 +1,40 @@
 # Testing Rake Tasks Example App
 
 This is a Rails application used as an example for how to test Rake
-tasks with RSpec.
+tasks with RSpec. It is part of [the
+talk](http://bit.ly/testing-rake-tasks) I gave at [Test Ruby
+PDX](http://testrubypdx.org/) in March 2016.
 
-TODO: add more details and info
+The application is called Identity, and it has one resource: Users. The
+premise for the live coding test driven part of the talk is taking the
+User model, which has a `name` attribute, and splitting the name into
+`first_name` and `last_name` attributes. As part of the split, a data
+migration must be run. That data migration is going to be what gets
+driven out as a Rake task with tests.
+
+See the `spec/lib/tasks` and `lib/tasks` directories for the
+corresponding tests and code.
+
+## License
+
+The MIT License (MIT)
+
+Copyright (c) 2016 Brett Chalupa
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
